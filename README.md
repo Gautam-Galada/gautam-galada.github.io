@@ -8,7 +8,7 @@
 ## Education
 
 ### University at Buffalo, Buffalo, NY
-**Master of Science in Artificial Intelligence** (Aug. 2023 – Present)  
+**Master of Science in Artificial Intelligence** (Aug. 2023 – Dec. 2024) [CGPA: 3.13/4.0]
 - **Coursework:** Algorithms, Artificial Intelligence, Machine Learning, Data Intensive Computing, Deep Learning, Reinforcement Learning, Numerical Methods, Computer Vision and Image Processing, Information Retrieval
 
 ### Vellore Institute of Technology, Andhra Pradesh, India
@@ -19,9 +19,17 @@
 
 ## Technical Skills
 
-- **Programming Languages:** Python, Java, Bash, R, C++, SQL, Matlab  
-- **Frameworks/Tools:** TensorFlow, PyTorch, Lightning, Keras, scikit-learn, NumPy, Pandas, OpenCV, NLTK, HuggingFace, LangChain, OpenAI, Ollama  
-- **Cloud Tools:** AWS, GCP, Azure, Docker, Hadoop
+### **Programming Languages**  
+- **Python**, **Bash**, **SQL**, Java, R, C++, MATLAB  
+
+### **Frameworks & Tools**  
+- **ML/DL**: PyTorch, TensorFlow, Hugging Face, scikit-learn, Keras, Lightning, OpenCV, MLflow, DeepSpeed  
+- **LLM/GenAI**: LangChain, Ollama, OpenAI, NLTK  
+- **Data Engineering**: NumPy, Pandas, Apache Kafka, Hadoop  
+
+### **Cloud & DevOps**  
+- **Cloud Platforms**: AWS, GCP, Azure  
+- **Deployment**: Docker, Kubernetes, CI/CD  
 
 ---
 
@@ -59,9 +67,13 @@
 
 ## Projects
 
+### Dynamic Online Neural Network Assistant Buffalo
+**Research Project** - IN PROGRESS | Buffalo, NY _(Oct. 2024 - Present)_
+-  Developing DONNA to address inefficiencies in manual model evaluation by automating training, logging, and performance monitoring with Qwen 2.5 and CUDA‑optimized workflows. Currently integrating Telegram API for real‑time data collection and feedback, with early benchmarks showing a 40% reduction in manual intervention and a 25% cost decrease in distributed training via DeepSpeed optimizations. Actively deploying MLflow for experiment tracking and scalable Kubernetes pipelines, targeting a (2x) acceleration in iteration speed for production‑grade LLMs.
+
 ### Variational Auto-encoder with Chaotic Mapping for Scene Generation  
-**Research Project** | Buffalo, NY _(Oct. 2024 – Present)_  
-- Designing a **VAE** framework leveraging **chaotic systems** (Logistic, Henon, Lorenz maps) to mitigate alignment inconsistencies and enhance spatial coherence in scene generation.  
+**Research Project** | Buffalo, NY _(Oct. 2024 – Dec. 2024)_  
+- Designed a **VAE** framework leveraging **chaotic systems** (Logistic, Henon, Lorenz maps) to mitigate alignment inconsistencies and enhance spatial coherence in scene generation.  
 - Achieved a **15% improvement** in diversity metrics and superior structural consistency over conventional VAEs.  
 - Exploring how chaotic dynamics in latent space yield more realistic, semantically aligned scene synthesis.
 
