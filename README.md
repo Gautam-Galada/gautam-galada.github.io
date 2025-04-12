@@ -1,6 +1,6 @@
 # NLP PRACTITIONER 
 **AI PRODUCT DEVELOPER · ML ENGINEER**  
-**Phone:** (+1) 716‑398‑0499 | **Email:** [gautamga@buffalo.edu](mailto:gautamga@buffalo.edu)  
+**Phone:** (+1) 716‑398‑0499 | **Email:** [gautamga@buffalo.edu](mailto:gautamgalada1105@gmail.com)  
 **GitHub:** [Gautam-Galada](https://github.com/Gautam-Galada) | **LinkedIn:** [gautam-galada](https://www.linkedin.com/in/gautam-galada)
 
 ---
