@@ -1,0 +1,456 @@
+/* ============================================
+   TYPOGRAPHY STYLES
+   ============================================ */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lead paragraph */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+/* Small text */
+.small,
+small {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+/* Strong emphasis */
+strong,
+.strong {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* Emphasis */
+em,
+.em {
+  font-style: italic;
+}
+
+/* Code */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background-color: var(--color-hover);
+  padding: 0.2em 0.4em;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  color: var(--color-primary);
+}
+
+pre {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-border);
+  padding: var(--spacing-sm);
+  overflow-x: auto;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.5;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 4px solid var(--color-accent);
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  background-color: var(--color-hover);
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: var(--spacing-xs);
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--color-text-secondary);
+}
+
+blockquote cite::before {
+  content: '— ';
+}
+
+/* Lists */
+ul,
+ol {
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-md);
+  color: var(--color-text);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.7;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Nested lists */
+ul ul,
+ol ul {
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+  list-style-type: circle;
+}
+
+ol ol,
+ul ol {
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+  list-style-type: lower-alpha;
+}
+
+/* Definition lists */
+dl {
+  margin-bottom: var(--spacing-sm);
+}
+
+dt {
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+dd {
+  margin-bottom: var(--spacing-sm);
+  margin-left: var(--spacing-md);
+  color: var(--color-text);
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 2px solid var(--color-border);
+  margin: var(--spacing-lg) 0;
+}
+
+/* Links in content */
+.content a,
+article a {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-accent);
+  transition: all var(--transition-speed);
+}
+
+.content a:hover,
+article a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-primary);
+}
+
+/* Abbreviations */
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 1px dotted var(--color-text-secondary);
+}
+
+/* Mark/Highlight */
+mark,
+.mark {
+  background-color: var(--color-accent);
+  color: #000;
+  padding: 0.1em 0.3em;
+}
+
+/* Monospace text */
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  letter-spacing: -0.5px;
+}
+
+/* Text alignment utilities */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Text transform utilities */
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* Font weight utilities */
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+/* Line height utilities */
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-relaxed {
+  line-height: 1.75;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+/* Letter spacing utilities */
+.tracking-tight {
+  letter-spacing: -0.05em;
+}
+
+.tracking-normal {
+  letter-spacing: 0;
+}
+
+.tracking-wide {
+  letter-spacing: 0.05em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.1em;
+}
+
+/* Article/Content styling */
+article,
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article-header {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.article-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -1px;
+}
+
+.article-meta {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.article-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.article-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.article-content > * + * {
+  margin-top: var(--spacing-sm);
+}
+
+.article-content h2,
+.article-content h3,
+.article-content h4 {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Badge/Tag styling */
+.badge,
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  background-color: var(--color-hover);
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  margin-right: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+  transition: all var(--transition-speed);
+}
+
+.badge:hover,
+.tag:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.badge-accent {
+  background-color: var(--color-accent);
+  color: #000;
+  border-color: var(--color-accent);
+}
+
+/* Publication/Citation styling */
+.citation {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.publication-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.publication-authors {
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.publication-venue {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .lead {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
