@@ -46,7 +46,7 @@
       toggleBtn.setAttribute('aria-label',
         theme === DARK_THEME ? 'Switch to light mode' : 'Switch to dark mode'
       );
-      toggleBtn.textContent = theme === DARK_THEME ? '☀️' : '🌙';
+      toggleBtn.textContent = theme === DARK_THEME ? 'Light' : 'Dark';
     }
   }
 
