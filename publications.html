@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Publications | Gautam Galada</title>
+  <meta name="title" content="Publications | Gautam Galada">
+  <meta name="description" content="Research publications and academic work by Gautam Galada.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <style>
+    .publication-card {
+      background-color: var(--color-surface);
+      border: 2px solid var(--color-border);
+      padding: var(--spacing-md);
+      margin-bottom: var(--spacing-md);
+      transition: all var(--transition-speed);
+      position: relative;
+    }
+
+    .publication-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 0;
+      background-color: var(--color-accent);
+      transition: height var(--transition-speed);
+    }
+
+    .publication-card:hover::before {
+      height: 100%;
+    }
+
+    .publication-card:hover {
+      border-color: var(--color-primary);
+      transform: translateX(4px);
+    }
+
+    .pub-status {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 3px;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .status-in-press {
+      background-color: var(--color-accent);
+      color: #000;
+    }
+
+    .status-published {
+      background-color: var(--color-primary);
+      color: #fff;
+    }
+
+    .status-preprint {
+      background-color: var(--color-text-secondary);
+      color: #fff;
+    }
+
+    .pub-year {
+      font-family: var(--font-mono);
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      opacity: 0.3;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-md);
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .stat-card {
+      text-align: center;
+      padding: var(--spacing-md);
+      background-color: var(--color-surface);
+      border: 2px solid var(--color-border);
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      margin-top: var(--spacing-xs);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">Gautam Galada</a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="reads.html">Reads</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            🌙
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="content-wrapper">
+      <!-- Header Section -->
+      <section class="container">
+        <div class="section-header" style="margin-top: 2rem;">
+          <h1 class="section-title">Publications</h1>
+          <p class="section-subtitle">
+            Research contributions to the field of AI and Machine Learning
+          </p>
+        </div>
+
+        <!-- Publication Statistics -->
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Total Publications</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Conference Papers</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Preprints</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications List -->
+      <section class="container">
+        <!-- 2024 Publications -->
+        <h2 style="color: var(--color-primary); font-size: 2rem; margin-bottom: 2rem; border-bottom: 2px solid var(--color-border); padding-bottom: 0.5rem;">
+          2024
+        </h2>
+
+        <!-- DUCK Paper -->
+        <div class="publication-card reveal">
+          <span class="pub-year">2024</span>
+          <span class="pub-status status-in-press">In Press</span>
+
+          <h3 class="publication-title">
+            DUCK: Developing Unassisted Cognitive Knowledge for Cyberbullying Detection
+          </h3>
+
+          <p class="publication-authors">
+            <strong>Gautam Galada</strong>, Dev Kapadia, Sibi Chakkaravarthy Sethuraman, Sunil Kumar Singh,
+            Anupama Namburu, and Hari Seetha
+          </p>
+
+          <p class="publication-venue">
+            ACM Conference Proceedings (In Press) • 26 pages
+          </p>
+
+          <div class="card-description" style="margin-top: var(--spacing-sm);">
+            <p>
+              Developed a federated learning framework for cyberbullying detection using zero-shot learning and
+              CNN-BiLSTM-Attention mechanism. Achieved 97.4% accuracy for English and 92.7% for Hindi,
+              demonstrating effectiveness across multiple languages without centralized data collection.
+            </p>
+          </div>
+
+          <div class="project-tags" style="margin-top: var(--spacing-sm);">
+            <span class="badge">Federated Learning</span>
+            <span class="badge">NLP</span>
+            <span class="badge">Cyberbullying Detection</span>
+            <span class="badge">Zero-Shot Learning</span>
+            <span class="badge">BiLSTM</span>
+          </div>
+
+          <div style="margin-top: var(--spacing-sm); display: flex; gap: var(--spacing-sm);">
+            <button class="btn btn-secondary" style="cursor: not-allowed; opacity: 0.6;">PDF (Coming Soon)</button>
+            <button class="btn btn-secondary" style="cursor: not-allowed; opacity: 0.6;">Code (Private)</button>
+          </div>
+        </div>
+
+        <!-- Gait Rehabilitation Paper -->
+        <div class="publication-card reveal">
+          <span class="pub-year">2024</span>
+          <span class="pub-status status-preprint">Preprint</span>
+
+          <h3 class="publication-title">
+            Optimizing Policy Gradient Methods for Adaptive Gait Rehabilitation
+          </h3>
+
+          <p class="publication-authors">
+            <strong>Gautam Galada</strong> et al.
+          </p>
+
+          <p class="publication-venue">
+            ResearchGate Preprint • DOI: 10.13140/RG.2.2.25370.04807/1
+          </p>
+
+          <div class="card-description" style="margin-top: var(--spacing-sm);">
+            <p>
+              Analyzed human gait data with CNN + Proximal Policy Optimization (PPO) + Artificial Algae Algorithm,
+              achieving 99% convergence rate within 50 episodes. Applied SHAP analysis for interpretability,
+              enabling transparent and personalized rehabilitation outcomes.
+            </p>
+          </div>
+
+          <div class="project-tags" style="margin-top: var(--spacing-sm);">
+            <span class="badge">Reinforcement Learning</span>
+            <span class="badge">PPO</span>
+            <span class="badge">Healthcare</span>
+            <span class="badge">SHAP</span>
+            <span class="badge">Interpretability</span>
+          </div>
+
+          <div style="margin-top: var(--spacing-sm); display: flex; gap: var(--spacing-sm);">
+            <a href="http://dx.doi.org/10.13140/RG.2.2.25370.04807/1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Paper</a>
+          </div>
+        </div>
+
+        <!-- 2023 Publications -->
+        <h2 style="color: var(--color-primary); font-size: 2rem; margin: 3rem 0 2rem 0; border-bottom: 2px solid var(--color-border); padding-bottom: 0.5rem;">
+          2023
+        </h2>
+
+        <!-- MetaSecure -->
+        <div class="publication-card reveal">
+          <span class="pub-year">2023</span>
+          <span class="pub-status status-preprint">Preprint</span>
+
+          <h3 class="publication-title">
+            MetaSecure: A Passwordless Authentication for the Metaverse
+          </h3>
+
+          <p class="publication-authors">
+            <strong>Gautam Galada</strong> et al.
+          </p>
+
+          <p class="publication-venue">
+            arXiv Preprint
+          </p>
+
+          <div class="card-description" style="margin-top: var(--spacing-sm);">
+            <p>
+              Developed a passwordless authentication framework specifically designed for metaverse environments,
+              implementing FIDO2-compliant biometric solutions with zero-knowledge proofs and decentralized
+              identity protocols.
+            </p>
+          </div>
+
+          <div class="project-tags" style="margin-top: var(--spacing-sm);">
+            <span class="badge">Authentication</span>
+            <span class="badge">FIDO2</span>
+            <span class="badge">Metaverse</span>
+            <span class="badge">Biometrics</span>
+            <span class="badge">Zero-Knowledge Proofs</span>
+          </div>
+
+          <div style="margin-top: var(--spacing-sm); display: flex; gap: var(--spacing-sm);">
+            <a href="#" class="btn btn-primary">View on arXiv</a>
+          </div>
+        </div>
+
+        <!-- MagicEye -->
+        <div class="publication-card reveal">
+          <span class="pub-year">2023</span>
+          <span class="pub-status status-preprint">Preprint</span>
+
+          <h3 class="publication-title">
+            MagicEye: Intelligent Wearable for Visually Impaired
+          </h3>
+
+          <p class="publication-authors">
+            <strong>Gautam Galada</strong> et al.
+          </p>
+
+          <p class="publication-venue">
+            arXiv Preprint
+          </p>
+
+          <div class="card-description" style="margin-top: var(--spacing-sm);">
+            <p>
+              Developed an intelligent wearable device for visually impaired individuals using real-time object
+              detection, scene understanding, and audio feedback. Implemented edge AI techniques for low-latency
+              processing on resource-constrained hardware.
+            </p>
+          </div>
+
+          <div class="project-tags" style="margin-top: var(--spacing-sm);">
+            <span class="badge">Computer Vision</span>
+            <span class="badge">Edge AI</span>
+            <span class="badge">Assistive Technology</span>
+            <span class="badge">Real-time Processing</span>
+            <span class="badge">Embedded Systems</span>
+          </div>
+
+          <div style="margin-top: var(--spacing-sm); display: flex; gap: var(--spacing-sm);">
+            <a href="#" class="btn btn-primary">View on arXiv</a>
+          </div>
+        </div>
+
+        <!-- 2022 Publications -->
+        <h2 style="color: var(--color-primary); font-size: 2rem; margin: 3rem 0 2rem 0; border-bottom: 2px solid var(--color-border); padding-bottom: 0.5rem;">
+          2022
+        </h2>
+
+        <!-- MetaKey -->
+        <div class="publication-card reveal">
+          <span class="pub-year">2022</span>
+          <span class="pub-status status-published">Published</span>
+
+          <h3 class="publication-title">
+            MetaKey: A Novel and Seamless Passwordless Multifactor Authentication for Metaverse
+          </h3>
+
+          <p class="publication-authors">
+            Sibi Chakkaravarthy Sethuraman, Aditya Mitra, <strong>Gautam Galada</strong>, Anisha Ghosh, and S Anitha
+          </p>
+
+          <p class="publication-venue">
+            2022 IEEE International Symposium on Smart Electronic Systems (iSES) • pp. 662–664
+          </p>
+
+          <div class="card-description" style="margin-top: var(--spacing-sm);">
+            <p>
+              Presented a novel passwordless multifactor authentication system for metaverse platforms,
+              integrating facial recognition with liveness detection and implementing FIDO2-compliant
+              protocols for seamless user experience.
+            </p>
+          </div>
+
+          <div class="project-tags" style="margin-top: var(--spacing-sm);">
+            <span class="badge">Authentication</span>
+            <span class="badge">FIDO2</span>
+            <span class="badge">Metaverse</span>
+            <span class="badge">Facial Recognition</span>
+            <span class="badge">IEEE</span>
+          </div>
+
+          <div style="margin-top: var(--spacing-sm); display: flex; gap: var(--spacing-sm);">
+            <a href="#" class="btn btn-primary">View Paper</a>
+            <a href="#" class="btn btn-secondary">IEEE Xplore</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Impact Section -->
+      <section class="container" style="padding-bottom: 4rem;">
+        <div class="section-header">
+          <h2 class="section-title">Research Impact</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card reveal text-center">
+            <h3 class="card-title">Cyberbullying Detection</h3>
+            <p class="card-description">
+              97.4% accuracy in English, 92.7% in Hindi using federated learning
+            </p>
+          </div>
+
+          <div class="card reveal text-center">
+            <h3 class="card-title">Authentication Security</h3>
+            <p class="card-description">
+              99.9% reduction in account takeovers with passwordless solutions
+            </p>
+          </div>
+
+          <div class="card reveal text-center">
+            <h3 class="card-title">Gait Rehabilitation</h3>
+            <p class="card-description">
+              99% convergence rate in adaptive policy optimization
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-social">
+        <a href="mailto:gautamgalada1105@gmail.com" class="social-link">
+          📧 gautamgalada1105@gmail.com
+        </a>
+        <a href="tel:+17163980499" class="social-link">
+          📱 +1 716-398-0499
+        </a>
+      </div>
+      <p class="footer-text">
+        📍 Denton, Texas
+      </p>
+      <p class="footer-text" style="margin-top: 1rem;">
+        &copy; 2025 Gautam Galada. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

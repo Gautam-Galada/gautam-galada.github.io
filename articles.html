@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Articles | Gautam Galada</title>
+  <meta name="title" content="Articles | Gautam Galada">
+  <meta name="description" content="Blog posts and articles by Gautam Galada on AI, Machine Learning, and Technology.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <style>
+    .banner {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      padding: 4rem 2rem;
+      text-align: center;
+      border: 4px solid var(--color-border);
+      margin-bottom: var(--spacing-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner::before {
+      content: '?';
+      position: absolute;
+      font-size: 15rem;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.05);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .banner-title {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 900;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .banner-subtitle {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: rgba(255, 255, 255, 0.9);
+      font-style: italic;
+    }
+
+    .article-card {
+      background-color: var(--color-surface);
+      border: 2px solid var(--color-border);
+      padding: var(--spacing-md);
+      margin-bottom: var(--spacing-md);
+      transition: all var(--transition-speed);
+      position: relative;
+    }
+
+    .article-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 0;
+      background-color: var(--color-accent);
+      transition: height var(--transition-speed);
+    }
+
+    .article-card:hover::before {
+      height: 100%;
+    }
+
+    .article-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .article-date {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin-bottom: var(--spacing-xs);
+    }
+
+    .article-category {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: var(--color-primary);
+      color: #fff;
+      border-radius: 3px;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .coming-soon {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: var(--color-hover);
+      border: 2px dashed var(--color-border);
+    }
+
+    .coming-soon-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .coming-soon-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .coming-soon-text {
+      font-size: 1.1rem;
+      color: var(--color-text-secondary);
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">Gautam Galada</a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="reads.html">Reads</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            🌙
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="content-wrapper">
+      <!-- Banner Section -->
+      <section class="container" style="margin-top: 2rem;">
+        <div class="banner reveal">
+          <div class="banner-content">
+            <h1 class="banner-title">If Not Research, Then What Am I Doing?</h1>
+            <p class="banner-subtitle">
+              Thoughts, musings, and explorations beyond the lab
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles Section -->
+      <section class="container">
+        <!-- Placeholder for future articles -->
+        <div class="coming-soon reveal">
+          <div class="coming-soon-icon">✍️</div>
+          <h2 class="coming-soon-title">Articles Coming Soon</h2>
+          <p class="coming-soon-text">
+            I'm currently working on some interesting pieces about AI, machine learning, and life as a researcher.
+            <br><br>
+            Check back soon for insights, tutorials, and thought pieces!
+          </p>
+        </div>
+
+        <!-- Example Article Template (commented out for now) -->
+        <!--
+        <div class="article-card reveal">
+          <div class="article-date">January 15, 2025</div>
+          <span class="article-category">Machine Learning</span>
+
+          <h2 class="publication-title">
+            Understanding Latent Space Interpretability: A Practical Guide
+          </h2>
+
+          <div class="card-description" style="margin-top: var(--spacing-sm);">
+            <p>
+              Exploring the fascinating world of latent spaces in neural networks and how we can make
+              them more interpretable and controllable. A deep dive into disentanglement techniques
+              and their practical applications.
+            </p>
+          </div>
+
+          <div class="project-tags" style="margin-top: var(--spacing-sm);">
+            <span class="badge">Latent Space</span>
+            <span class="badge">Interpretability</span>
+            <span class="badge">VAE</span>
+            <span class="badge">Tutorial</span>
+          </div>
+
+          <div style="margin-top: var(--spacing-sm);">
+            <a href="#" class="btn btn-primary">Read Article →</a>
+          </div>
+        </div>
+
+        <div class="article-card reveal">
+          <div class="article-date">January 10, 2025</div>
+          <span class="article-category">Research</span>
+
+          <h2 class="publication-title">
+            The Art of Asking Questions: A Researcher's Journey
+          </h2>
+
+          <div class="card-description" style="margin-top: var(--spacing-sm);">
+            <p>
+              Reflections on the importance of asking the right questions in research, and how curiosity
+              drives innovation in machine learning and AI. A personal essay on the research process
+              and dealing with uncertainty.
+            </p>
+          </div>
+
+          <div class="project-tags" style="margin-top: var(--spacing-sm);">
+            <span class="badge">Research</span>
+            <span class="badge">Philosophy</span>
+            <span class="badge">Personal</span>
+          </div>
+
+          <div style="margin-top: var(--spacing-sm);">
+            <a href="#" class="btn btn-primary">Read Article →</a>
+          </div>
+        </div>
+
+        <div class="article-card reveal">
+          <div class="article-date">January 5, 2025</div>
+          <span class="article-category">Tutorial</span>
+
+          <h2 class="publication-title">
+            Physics-Informed Neural Networks: Bridging Physics and AI
+          </h2>
+
+          <div class="card-description" style="margin-top: var(--spacing-sm);">
+            <p>
+              A practical introduction to Physics-Informed Machine Learning, exploring how we can
+              integrate physical laws and domain knowledge into neural network architectures.
+              Includes code examples and applications.
+            </p>
+          </div>
+
+          <div class="project-tags" style="margin-top: var(--spacing-sm);">
+            <span class="badge">Physics-Informed ML</span>
+            <span class="badge">Tutorial</span>
+            <span class="badge">PyTorch</span>
+            <span class="badge">PINN</span>
+          </div>
+
+          <div style="margin-top: var(--spacing-sm);">
+            <a href="#" class="btn btn-primary">Read Article →</a>
+          </div>
+        </div>
+        -->
+      </section>
+
+      <!-- Newsletter Signup (Optional) -->
+      <section class="container" style="padding-bottom: 4rem;">
+        <div class="card reveal" style="max-width: 600px; margin: 0 auto; text-align: center;">
+          <h3 class="card-title">Stay Updated</h3>
+          <p class="card-description" style="margin-bottom: var(--spacing-md);">
+            Want to be notified when I publish new articles? Drop me an email!
+          </p>
+          <a href="mailto:gautamgalada1105@gmail.com?subject=Subscribe to Articles" class="btn btn-accent">
+            📧 Get Notified
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-social">
+        <a href="mailto:gautamgalada1105@gmail.com" class="social-link">
+          📧 gautamgalada1105@gmail.com
+        </a>
+        <a href="tel:+17163980499" class="social-link">
+          📱 +1 716-398-0499
+        </a>
+      </div>
+      <p class="footer-text">
+        📍 Denton, Texas
+      </p>
+      <p class="footer-text" style="margin-top: 1rem;">
+        &copy; 2025 Gautam Galada. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
