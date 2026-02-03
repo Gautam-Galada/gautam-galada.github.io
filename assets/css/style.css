@@ -126,6 +126,7 @@ h6 {
 
 #main {
   margin-left: 300px;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 1199px) {
@@ -189,7 +190,7 @@ h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
+  left: 15px;
   top: 15px;
   z-index: 9998;
   border: 0;
@@ -199,7 +200,7 @@ h6 {
   outline: none !important;
   line-height: 1;
   cursor: pointer;
-  text-align: right;
+  text-align: left;
 }
 
 .mobile-nav-toggle i {
@@ -214,6 +215,22 @@ h6 {
   left: 0;
 }
 
+.mobile-nav-active #main {
+  margin-left: 300px;
+}
+
+.mobile-nav-active #hero {
+  margin-left: 300px;
+}
+
+.mobile-nav-active .hero-container {
+  padding-left: 20px;
+}
+
+.mobile-nav-active .mobile-nav-toggle {
+  left: 315px;
+}
+
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
@@ -226,6 +243,7 @@ h6 {
   height: 100vh;
   background: url("../img/one.jpg") center;
   background-size: cover;
+  transition: all 0.5s ease-in-out;
 }
 
 #hero:before {
